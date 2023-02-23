@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Product-Electronic</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/release/v5.10.0/css/all.css"/> -->
+    <link rel="stylesheet" href="./flip.css">
+    <style>
+        /* body{
+            background-color: rgb(204, 204, 204);
+        } */
+        #pro-details {
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-around; */
+            position: relative;
+            left: 7%;
+            width: 90%;
+            border-radius: 2px;
+            /* background-color: rgb(204, 204, 204); */
+            box-shadow: -5px -5px 4px rgb(226, 226, 226), 5px 5px 4px rgb(232, 232, 232);
+            margin-top: 20px;
+
+        }
+
+        #pro-details .single-pro-image {
+            margin-top: 10px;
+            /* position: relative;
+            background-attachment: scroll; */
+            width: 37%;
+            background-color: rgb(233, 233, 233);
+        }
+
+        .single-pro-image .small-img-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .small-img-col {
+            width: 24%;
+            cursor: pointer;
+        }
+
+        .single-pro-image #mainImg {
+            position: relative;
+            width: 75%;
+            left: 12%;
+            padding: 5% 20%;
+            border: 1px solid gray;
+            background-color: white;
+        }
+
+        .hearts {
+            position: absolute;
+            top: 3%;
+            left: 33%;
+            z-index: 100;
+            background-color: white;
+            color: gray;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .small-img-col {
+            background-color: white;
+        }
+
+        .smallimg {
+            padding: 15px;
+        }
+
+        #adtocart {
+            margin: 10px;
+            position: relative;
+            left: 10px;
+            background-color: orange;
+            color: white;
+            height: 60px;
+            width: 250px;
+            font-weight: 600;
+            font-size: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: sans-serif;
+        }
+
+        #buynow {
+            margin: 10px;
+            position: relative;
+            left: 10px;
+            background-color: orangered;
+            color: white;
+            height: 60px;
+            width: 250px;
+            font-weight: 600;
+            font-size: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: sans-serif;
+        }
+
+        .single-pro-details {
+            width: 63%;
+            /* border: 1px solid red; */
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .single-pro-details span {
+            display: inline-block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(160, 160, 160);
+            font-weight: 100;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .single-pro-details span:hover {
+            color: blue;
+            cursor: pointer;
+        }
+
+        .single-pro-details .dji_OM4 {
+            margin-left: 10px;
+            font-size: 22px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        .single-pro-details .rate {
+            display: flex;
+            width: fit-content;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            height: 30px;
+            padding: 4px;
+            margin-top: 10px;
+            cursor: pointer;
+
+        }
+
+        .single-pro-details .rate button {
+            background-color: green;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            padding: 5px;
+        }
+
+        .single-pro-details .rate p {
+            color: gray;
+            font-weight: 700;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: 12px;
+        }
+
+        .single-pro-details .rate img {
+            width: 100px;
+            margin-left: 16px;
+        }
+
+        .single-pro-details .s_pr {
+            color: green;
+            font-size: 21px;
+            font-weight: 100;
+            margin-top: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .single-pro-details .pr {
+
+            margin-top: 10px;
+            font-family: sans-serif;
+            font-size: 35px;
+            font-weight: 300;
+        }
+
+        .single-pro-details .pr span {
+            text-decoration: line-through;
+            font-size: 20px;
+        }
+
+        .single-pro-details .pr strong {
+            color: green;
+            font-weight: 300;
+            font-size: 20px;
+            font-family: sans-serif;
+            padding-left: 8px;
+        }
+
+        .single-pro-details .pr b {
+            display: inline-block;
+            font-size: 18px;
+            width: 20px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 50%;
+            font-weight: 300;
+            cursor: pointer;
+
+        }
+
+        .single-pro-details .offers {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .single-pro-details .offers h2 {
+            font-weight: 500;
+            height: 20px;
+        }
+
+        .single-pro-details .offers p {
+            /* display: flex;
+            align-content: center;
+            align-items: center; */
+            /* white-space: nowrap; */
+            margin-top: 22px;
+            font-size: 15px;
+            word-spacing: 0px;
+            /* text-align: center; */
+        }
+
+        .single-pro-details .offers img {
+            width: 20px;
+            text-align: start;
+            word-spacing: 0px;
+        }
+
+        .single-pro-details .offers span {
+            color: blue;
+            cursor: pointer;
+        }
+
+        #place_order_secttion {
+            display: none;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .order_flex_container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .place_order_container {
+            width: 70%;
+            border: 1px solid gray;
+            border-radius: 4px;
+            padding: 3px;
+        }
+
+        .place_order_header {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            padding: 30px 80px;
+            font-weight: 500;
+            font-size: 21px;
+            font-family: sans-serif;
+            height: 60px;
+            border-radius: 3px;
+            /* border: 1px solid gray; */
+            box-shadow: -1px -1px 4px rgb(202, 202, 202), 1px 1px 4px rgb(185, 185, 185);
+        }
+
+        .place_order_header .flipboredr {
+            display: inline-block;
+            width: 180px;
+            position: absolute;
+            border-bottom: 5px solid blue;
+            left: 200px;
+            top: 90px;
+        }
+
+        .place_order_header .deliver {
+            font-family: serif;
+        }
+
+        .place_order_header button {
+            width: 110px;
+            height: 40px;
+            border-radius: 6px;
+            color: blue;
+            font-weight: 700;
+            font-family: serif;
+            border: 1px solid rgb(171, 171, 171);
+            font-size: 19px;
+        }
+
+        .product {
+            /* border: 1px solid red; */
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-items: center;
+            /* box-shadow: -1px -1px 4px rgb(202, 202, 202), 1px 1px 4px rgb(185, 185, 185); */
+        }
+
+        .product img {
+            width: 70px;
+            margin-left: 50px;
+        }
+
+        .product div {
+            width: 350px;
+        }
+
+        .product p {
+            font-family: serif;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .product p span {
+            font-size: 17px;
+            color: rgb(156, 156, 156);
+        }
+
+        .product div .seller {
+            color: gray;
+        }
+
+        .product div .seller img {
+            margin: 0;
+            padding: 0;
+        }
+
+        .product .price {
+            font-size: 25px;
+            white-space: nowrap;
+        }
+
+        .product .price span {
+            text-decoration: line-through;
+            color: gray;
+            font-size: 17px;
+            padding: 0 5px;
+        }
+
+        .product .price b {
+            display: inline-block;
+            font-weight: 300;
+            font-family: serif;
+            color: green;
+            font-size: 19px;
+        }
+
+        .product .delv {
+            position: relative;
+            top: -50px;
+            font-family: serif;
+            font-size: 20px;
+        }
+
+        .additems_container {
+            position: relative;
+            left: 5%;
+            width: 90%;
+            height: 300px;
+            border: 1px solid gray;
+            background-color: rgba(213, 230, 224, 0.963);
+        }
+
+        .additems_container h3 {
+            font-family: serif;
+            font-weight: 400;
+            padding-top: 20px;
+            padding-left: 15px;
+        }
+
+        .container_additem_desc {
+            display: flex;
+        }
+
+        .container_additem_desc img {
+            padding-left: 15px;
+            padding-right: 10px;
+            margin-top: 20px;
+            width: 95px;
+            height: 30px;
+            font-family: serif;
+        }
+
+        .container_additem_desc div {
+            margin-left: 10px;
+            width: 650px;
+        }
+
+        .container_additem_desc div p {
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+
+        .container_additem_desc div span {
+            color: rgb(111, 110, 110);
+            font-family: serif;
+            padding-top: 5px;
+            font-size: 19px;
+        }
+
+        .container_additem_desc div p {
+            font-size: 25px;
+            font-family: serif;
+            padding: 5px;
+        }
+
+        .container_additem_desc div .rcancle {
+            text-decoration: line-through;
+            font-size: 19px;
+            padding: 3px;
+        }
+
+        .container_additem_desc div b {
+            color: green;
+            font-size: 13px;
+            font-weight: 500;
+            padding: 3px;
+        }
+
+        .container_additem_desc div .details {
+            font-size: 18px;
+            font-family: serif;
+        }
+
+        .container_additem_desc #add_items {
+            width: 220px;
+            white-space: nowrap;
+            height: 55px;
+            border: none;
+            border-radius: 3px;
+            background-color: rgb(255, 157, 0);
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .place_order_container .footer_order {
+            margin-top: 10px;
+            height: 85px;
+        }
+
+        .place_order_container .footer_order #place_ord_bttn {
+            height: 60px;
+            width: 300px;
+            position: relative;
+            right: -510px;
+            background-color: orangered;
+            color: white;
+            font-size: 22px;
+            border-radius: 2px;
+            font-weight: 400;
+        }
+
+        .order_flex_container .price_details {
+            width: 400px;
+            height: 350px;
+            border: 1px solid rgb(174, 173, 173);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header1 -->
+    <section id="header-1" class="none">
+        <div class="logo">
+            <img width="95" height="20px" src="./flipkart-plus_8d85f4 logo.png" alt="">
+            <p> <a href="#"> Explore</a> <img height="15px" src="./plus_aef861.png" alt=""></p>
+        </div>
+        <input id="search-box" type="text" placeholder="Search for products,brands and more">
+        <i class="fa fa-search search" id="search"></i>
+        <a href="../register/loginpage2.html"><button id="loginbttn">Login</button>
+            <!-- <select id="login-select">
+                <option>New Costumer? <span>SignUp</span></option>
+            </select> -->
+        </a>
+        <p>Become a Seller</p>
+        <select id="">
+            <option>More</option>
+        </select>
+
+        <i id="carts" class="fa fa-shopping-cart"> Cart</i>
+
+    </section>
+
+    <section class="mob-box-header2 none">
+        <select id="">
+            <div class="flexbox">
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option style="display: none;">Electronics</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+            </div>
+        </select>
+
+        <select id="">
+            <div class="flexbox">
+                <div>
+                    <optgroup label="Television > ">
+                        <option style="display: none;">TVs & Appliances</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+            </div>
+        </select>
+
+        <select id="">
+            <div class="flexbox">
+                <div>
+                    <optgroup label="Footwear > ">
+                        <option style="display: none;">Men</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+            </div>
+        </select>
+        <select id="">
+            <div class="flexbox">
+                <div>
+                    <optgroup label="Footwear > ">
+                        <option style="display: none;">Women</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+            </div>
+        </select>
+        <select id="">
+            <div class="flexbox">
+                <div>
+                    <optgroup label="Kids Clothings > ">
+                        <option style="display: none;">Baby & Kids</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+            </div>
+        </select>
+        <select id="">
+            <div class="flexbox">
+                <div>
+                    <optgroup label="Footwear > ">
+                        <option style="display: none;">Home & Furniture</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+            </div>
+        </select>
+        <select id="">
+            <div class="flexbox">
+                <div>
+                    <optgroup label="Footwear > ">
+                        <option style="display: none;">Sports, Book & More</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+            </div>
+        </select>
+        <select id="">
+            <div class="flexbox">
+                <div>
+                    <optgroup label="Footwear > ">
+                        <option style="display: none;">Flights</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+            </div>
+        </select>
+        <select id="">
+            <div class="flexbox">
+                <div>
+                    <optgroup label="Footwear > ">
+                        <option style="display: none;">Offer Zone</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+            </div>
+        </select>
+
+        <select id="">
+            <div class="flexbox">
+                <div>
+                    <optgroup label="Footwear > ">
+                        <option style="display: none;">Grocery</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+                <div>
+                    <optgroup label="Mobile > ">
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                        <option>Mi</option>
+                        <option>RealMe</option>
+                        <option>Sumsung</option>
+                    </optgroup>
+                </div>
+            </div>
+        </select>
+    </section>
+
+    <section id="pro-details" class="none">
+        <div class="single-pro-image">
+            <i id="hearts" class="fa hearts fa-heart"></i>
+            <img src="./electronicimg-group/0-43-om4-se-dji-original-imag5u6rgsdh6k4g.webp" alt="" height="520"
+                id="mainImg" />
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img class="smallimg" src="./electronicimg-group/0-43-om4-se-dji-original-imag5u6rgsdh6k4g.webp"
+                        onclick="small_Img_click('smallImg_1')" alt="" id="smallImg_1" height="210" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img class="smallimg" src="./electronicimg-group/sp1 selfie.webp" alt=""
+                        onclick="small_Img_click('smallImg_2')" id="smallImg_2" height="210" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img class="smallimg" src="./electronicimg-group/0-43-om4-se-dji-original-imag5u6rzpyceybh2.webp"
+                        alt="" onclick="small_Img_click('smallImg_3')" id="smallImg_3" height="210" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img class="smallimg" src="./electronicimg-group/0-43-om4-se-dji-original-imag5u6rqzvefyfy3.webp"
+                        alt="" onclick="small_Img_click('smallImg_4')" id="smallImg_4" height="210" width="100%">
+                </div>
+            </div>
+            <button id="adtocart"><i class="fa fa-shopping-cart"></i> ADD TO CART</button>
+            <button id="buynow"><i class="fa fa-shopping-cart"></i> BUY NOW</button>
+        </div>
+        <div class="single-pro-details">
+            <span>Home > </span> <span> Camera & Accessories > </span> <span> Gimbals > </span>
+            <p class="dji_OM4">dji OM4 SE 3 Axis Gimbal (230)</p>
+            <div class="rate">
+                <button>4.3 <i class="fa fa-star"></i></button>
+                <p>2,297 Ratings & 254 Reviews</p>
+                <img src="./electronicimg-group/fa_62673a.png" alt="">
+            </div>
+            <p class="s_pr">Special price</p>
+            <h1 class="pr">₹8,499 <span>₹9,990</span> <strong>14% off</strong> <b> i </b></h1>
+            <div class="offers">
+                <h2>Available offers</h2>
+                <p>
+                    <img src="./electronicimg-group/c22c9fc4-0555-4460-8401-bf5c28d7ba29.webp" alt=""> <b>Bank Offer</b>
+                    10% off on Bank of Baroda Credit Card EMI Transactions, up to ₹3,000 on orders of ₹5,000 and above
+                    <span>T&C</span>
+                </p>
+                <p>
+                    <img src="./electronicimg-group/c22c9fc4-0555-4460-8401-bf5c28d7ba29.webp" alt=""> <b>Bank Offer</b>
+                    10% off on ICICI Bank Credit Card EMI Transactions, up to ₹2,000. On orders of ₹5,000 and above
+                    <span>T&C</span>
+                </p>
+                <p>
+                    <img src="./electronicimg-group/c22c9fc4-0555-4460-8401-bf5c28d7ba29.webp" alt=""> <b>Bank Offer</b>
+                    10% off on Bank of Baroda Mastercard Debit Cards, up to ₹1,500 on orders of ₹5,000 and above
+                    <span>T&C</span>
+                </p>
+                <p>
+                    <img src="./electronicimg-group/c22c9fc4-0555-4460-8401-bf5c28d7ba29.webp" alt=""> <b>Special
+                        Price</b>
+                    Get extra 5% off (price inclusive of cashback/coupon)
+                    <span>T&C</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="electronic-section" class="section-m1 none">
+        <div class="elect-pro">
+            <img src="./electronicimg-group/imggroup/brother-hl-b2000d-original-imafuvbyagrrayew.webp" alt="">
+            <p>Top Deals of cameras</p>
+            <strong>Shop Now!</strong>
+            <span>Tripoda,Gimbals,Bags</span>
+        </div>
+        <div class="elect-pro">
+            <img src="./electronicimg-group/imggroup/-original-imagagyyfzmpjbwgb sonic.webp" alt="">
+            <p>ViewsSonic Monitors</p>
+            <strong>Shop Now!</strong>
+            <span>Top,Rated,Monitors</span>
+        </div>
+        <div class="elect-pro">
+            <img src="./electronicimg-group/imggroup/-original-imagd7dzan7sakt2 power-banks.webp" alt="">
+            <p>PremiumPower Banks</p>
+            <strong>Shop Now!</strong>
+            <span>Mi,realme & More</span>
+        </div>
+        <div class="elect-pro">
+            <img src="./electronicimg-group/imggroup/-original-imagg7hsggshhwbzmirrorless cameras.webp" alt="">
+            <p>Top Deals of Camera Accessories Shop</p>
+            <strong>Shop Now!</strong>
+            <span>Canon,Sony,Fujiflim</span>
+        </div>
+
+    </section>
+
+
+
+
+    <section id="footer1" class="section-m1 none">
+        <dt>
+            <dl class="dl">Top Stories:<strong>Brand Directory</strong></dl>
+            <br>
+
+            <dl class="dl">MOST SEARCHED FOR ON FLIPKART:</dl>
+
+        <dd>
+            Bounce Infinity | E1iPhone 14 Coversvivo T1XOPPO Reno8 5GOPPO Reno8 Pro 5GNothing Phone 1Sell Old Mobile
+            PhonesASUS TUF Gaming F15 Core i5 10th GenElectronics StoreOPPO A16KVivo Y33TOPPO Reno7 5GBathroom Exhaust
+            FanSamsung Window ACOPPO Reno7 Pro 5GiPhone 13iPhone 13 ProiPhone 13 Pro MaxiPhone 13 MiniGoogle Pixel 6a
+            coversFlipkart QuickBooksFlipkart Help CentreOnline Boat StoreCovers from Rs 99Flipkart Track OrdersFlipkart
+            Manage OrdersFlipkart Return OrdersFlipkart Gift Cards StoreFlipkart Axis Bank Credit CardFlipkart Pay Later
+        </dd>
+
+        </dt>
+    </section>
+
+
+
+    <footer class="none">
+        <div class="footer">
+            <div class="info">
+                <p>ABOUT</p><br>
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Flipkart Stroies</a>
+                <a href="#">Press</a>
+                <a href="#">Flipkart Wholesale</a>
+                <a href="#">Corporate Information</a>
+            </div>
+            <div class="info">
+                <p>HELP</p><br>
+                <a href="#">Payments</a>
+                <a href="#">Shipping</a>
+                <a href="#">Cancellation & Returns</a>
+                <a href="#">FAQ</a>
+                <a href="#">Report Infringment</a>
+            </div>
+            <div class="info">
+                <p>POLICY</p><br>
+                <a href="#">Return Policy</a>
+                <a href="#">Terms Of Use</a>
+                <a href="#">Security</a>
+                <a href="#">Security</a>
+                <a href="#">Sitemap</a>
+                <a href="#">EPR Compliance</a>
+            </div>
+            <div class="info">
+                <p>SOCIAL</p><br>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">YouTube</a>
+            </div>
+            <div class="border"></div>
+            <div class="info">
+                <p class="mailus">Mail Us:</p><br>
+                <pre>
+                Flipkart Internet Private Limited,
+                Buildings Alyssa, Begonia &
+                Clove Embassy Tech Village,
+                Outer Ring Road, Devarabeesanahalli Village,
+                Bengaluru, 560103,
+                Karnataka, India
+            </pre>
+            </div>
+            <div class="info">
+                <p class="mailus">Registered Office Address:</p><br>
+                <pre>
+                Flipkart Internet Private Limited,
+                Buildings Alyssa, Begonia &
+                Clove Embassy Tech Village,
+                Outer Ring Road, Devarabeesanahalli Village,
+                Bengaluru, 560103,
+                Karnataka, India
+                CIN : U51109KA2012PTC066107
+                Telephone: <input type="tel" value="044-45614700">
+            </pre>
+            </div>
+        </div>
+        <hr>
+        <div class="footer">
+            <div class="info">
+                <p>Become a Seller</p>
+            </div>
+            <div class="info">
+                <p>Advertise</p>
+            </div>
+            <div class="info">
+                <p>Gift Cards</p>
+            </div>
+            <div class="info">
+                <p>Help Center</p>
+            </div>
+            <div class="info">
+                <p>© 2007-2022 Flipkart.com</p>
+            </div>
+            <div class="info">
+                <p class="paymentsbox">Registered Office Address:</p>
+            </div>
+        </div>
+    </footer>
+    <section id="place_order_secttion" class="section-m1">
+        <div class="order_flex_container">
+            <div class="place_order_container">
+                <div class="place_order_header">
+                    <p>Flipkart</p>
+                    <p>Grocery</p><span class="flipboredr"></span>
+                </div>
+                <div class="place_order_header section-m1">
+                    <span class="deliver">Deliver to:</span> <button>Change</button>
+                </div>
+                <div class="product">
+                    <img src="./electronicimg-group/imggroup/0-43-om4-se-dji-original-imag5u6rgsdh6k4g.webp" alt="">
+                    <div>
+                        <p>dji OM4 SE 3 Axis Gimbal <br> <span>230</span></p>
+                        <p class="seller">Seller:RetailNet <img src="./electronicimg-group/fa_62673a.png" alt=""> </p>
+                        <br>
+                        <p class="price"><span>₹9,990</span>₹8,499 <b>14% Off5 offers applied</b></p>
+                    </div>
+                    <div class="delv">
+                        Delivery by Mon Jan 2 | <span>Free</span> ₹40
+                    </div>
+                </div>
+                <div class="additems_container">
+                    <h3>OneAssist Extended Warranty Plan for Electronics</h3><br>
+                    <div class="container_additem_desc">
+                        <img src="./electronicimg-group/-original-imagbhk3gz8zjzzfoneassist.webp" alt="">
+                        <div>
+                            <p>Extended Warranty</p>
+                            <span>1 Year</span><br>
+                            <p class="r">₹169 <span class="rcancle">₹2,230</span> <b> 92% off</b></p>
+                            <p class="details">OneAssist Extended Warranty Plan - “OneAssist Extended Warranty” means an
+                                extension of the
+                                original manufacturer’s warranty on the concerned Product by a continuous period of 1 or
+                                2
+                                Years, starting from the expiry of manufacturer’s warranty. OneAssist Extended Warranty
+                                replicates the manufacturer’s warranty against any malfunctions or breakdown for the
+                                duration opted.
+                            </p>
+                        </div>
+                        <button id="add_items">Add Items</button>
+                    </div>
+                </div>
+                <div class="place_order_header footer_order">
+                    <button id="place_ord_bttn">PLACE ORDER</button>
+                </div>
+            </div>
+            <div class="price_details">
+                <h2>PRICE DETAILS</h2>
+                <hr>
+                <p>Price (1 item) <span> ₹9,990</span></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./flip.js"></script>
+
+    <script>
+        function small_Img_click(si_I) {
+            let mainImg = document.getElementById('mainImg');
+            let smallImg = document.getElementById(si_I);
+            mainImg.src = smallImg.src;
+        }
+
+        let hearts = document.getElementById('hearts');
+        let favourites = true;
+        hearts.addEventListener('click', function () {
+            if (favourites) {
+                document.getElementById('hearts').style.color = 'blue';
+                favourites = false;
+            }
+            else {
+                document.getElementById('hearts').style.color = 'gray';
+                favourites = true;
+            }
+        });
+        let addtocart = document.getElementById('adtocart');
+        addtocart.addEventListener('click', function () {
+            let display_none = document.getElementsByClassName('none');
+            for (let x = 0; x < display_none.length; x++) {
+                display_none[x].style.display = 'none';
+            }
+            document.getElementById('place_order_secttion').style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>

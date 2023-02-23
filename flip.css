@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+body {
+    width: 100%;
+}
+
+.section-m1 {
+    margin: 30px 0;
+}
+
+/* ----- header-1 ----- */
+#header-1 {
+    background-color: rgba(35, 86, 240);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    /* box-shadow: 4px 4px 1px rgb(35, 86, 240, 0.927); */
+    padding: 10px 10px;
+}
+
+#header-1 .logo {
+    position: relative;
+    color: white;
+    /* margin: 5px 0; */
+    padding-left: 13%;
+}
+
+#header-1 .logo p a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    word-spacing: 13px;
+}
+
+#header-1 .logo p a:hover {
+    text-decoration: underline;
+
+}
+
+#header-1 input {
+    width: 500px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: -4%;
+    border-radius: 2px;
+    background-color: white;
+    border: none;
+
+}
+
+#header-1 input:focus {
+    outline: none;
+}
+
+#header-1 .search {
+    position: absolute;
+    left: 50.5rem;
+    color: rgb(5, 86, 240);
+    /* color: red; */
+    /* line-height: 30px; */
+    font-weight: 400;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#header-1 button {
+    width: 130px;
+    height: 35px;
+    font-size: 17px;
+    color: rgb(5, 86, 240);
+    border-radius: 2px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+#login-select {
+    /* display: none; */
+    position: absolute;
+    right: 570px;
+    top: 50px;
+    background-color: white;
+    color: black;
+    width: 250px;
+}
+
+#header-1 p {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#header-1 select {
+    background: none;
+    border: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#header-1 #carts {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    width: 7%;
+}
+
+/* ----- header-2 ------ */
+#header-2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    /* height: 125px; */
+    border: 2px white;
+    box-shadow: 2px 2px 2px rgb(235, 223, 223);
+    padding: 0 10%;
+
+
+}
+
+#header-2 #sm-box a {
+    text-decoration: none;
+    color: black;
+}
+
+#header-2 #sm-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#header-2 #sm-box h3 {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#header-2 #sm-box img {
+    height: 80px;
+    cursor: pointer;
+}
+
+#header-2 #sm-box select {
+    border: none;
+    background-color: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+#header-2 #sm-box select:hover,
+#header-2 #sm-box h3:hover {
+    color: rgb(5, 86, 240);
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#slide-bg-screen ,
+#slide-bg-screen2{
+    width: 98%;
+    margin: 1%;
+    min-height: 47vh;
+    animation-name: screen-bg-slide;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+    background-image: url(./headerimggroup/Apple_iPhone_Banner\ 2.jpg.crdownload);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 60% top 50%;
+    -o-animation-direction: alternate-reverse;
+    /* -moz-animation-direction: alternate-reverse; */
+}
+
+@keyframes screen-bg-slide {
+    0% {
+        background-image: url(./headerimggroup/Apple_iPhone_Banner\ 3.jpg.crdownload.jpg);
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url(./headerimggroup/air-travel1.jpg);
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+    }
+
+    75% {
+        background-image: url(./headerimggroup/Apple_iPhone_Banner\ 2.jpg.crdownload);
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(./headerimggroup/screen4.webp);
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+    }
+}
+
+/* ------ electronic sec ------- */
+
+#electronic-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 1%;
+    background-color: rgb(243, 243, 243);
+    border: 3px solid white;
+    box-shadow: 3px 3px 3px rgb(236, 236, 236), -3px -3px 3px rgb(225, 224, 224);
+}
+
+#electronic-section .elect-pro {
+    text-align: center;
+    width: 240px;
+    height: 370px;
+    /* box-shadow: 6px 6px 5px gray; */
+    background-color: rgb(239, 239, 239);
+    cursor: pointer;
+
+}
+
+#electronic-section .elect-pro h1 {
+    display: inline-block;
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 29px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#electronic-section .elect-pro button {
+    position: relative;
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 19px;
+    width: 120px;
+    height: 37px;
+    background-color: rgb(38, 96, 244);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    top: 30px;
+    z-index: 777;
+    cursor: pointer;
+
+}
+
+.elect-pro #bttn-electimg {
+    width: 240px;
+    height: 240px;
+}
+
+.elect-pro #bttn-electimg:hover {
+    transform: scale(1, 1);
+}
+
+.elect-pro img {
+    margin: 20px 0 0 0;
+    height: 180px;
+    padding-bottom: 30px;
+    transition: 0.3s;
+}
+
+.elect-pro img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.elect-pro p,
+.elect-pro strong {
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.elect-pro span {
+    position: relative;
+    display: block;
+    bottom: -20px;
+    color: rgba(128, 128, 128, 0.835);
+    text-align: center;
+}
+
+.elect-pro strong {
+    color: rgb(23, 194, 23);
+    font-weight: 400;
+    font-size: 19px;
+}
+
+#electronic-section #furniture-studio-click img {
+    /* margin-top: 1%; */
+    cursor: pointer;
+    height: 370px;
+    box-shadow: -6px 0px 5px gray;
+
+}
+
+/* ------ toys-section ----- */
+
+#toys-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 1%;
+    background-color: rgb(243, 243, 243);
+    border: 3px solid white;
+    box-shadow: 3px 3px 3px rgb(236, 236, 236), -3px -3px 3px rgb(225, 224, 224);
+}
+
+#toys-section .elect-pro {
+    text-align: center;
+    width: 250px;
+    height: 370px;
+    /* box-shadow: 6px 6px 5px gray; */
+    background-color: rgb(239, 239, 239);
+    cursor: pointer;
+    text-align: center;
+
+}
+
+#toys-section .elect-pro h1 {
+    display: inline-block;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 29px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#toys-section .elect-pro button {
+    position: relative;
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 19px;
+    width: 120px;
+    height: 37px;
+    background-color: rgb(38, 96, 244);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    top: 30px;
+    z-index: 777;
+    cursor: pointer;
+
+}
+
+/* Wedding & Gifting Specials */
+#toys-section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 1%;
+    background-color: rgb(243, 243, 243);
+    border: 3px solid white;
+    box-shadow: 3px 3px 3px rgb(236, 236, 236), -3px -3px 3px rgb(225, 224, 224);
+}
+
+#toys-section1 .elect-pro {
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    /* box-shadow: 6px 6px 5px gray; */
+    background-color: rgb(239, 239, 239);
+    cursor: pointer;
+
+}
+
+#toys-section1 .elect-pro h1 {
+    display: inline-block;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 29px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#toys-section1 .elect-pro button {
+    position: relative;
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 19px;
+    width: 120px;
+    height: 37px;
+    background-color: rgb(38, 96, 244);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    top: 30px;
+    z-index: 777;
+    cursor: pointer;
+}
+
+/* Hand-picked Christmas Specials */
+
+#toys-section #bttn-electimg {
+    height: 210px;
+    /* display: none; */
+}
+
+/* <!-- ALL INFORMATION FOTTER1 --> */
+
+#footer1 {
+    /* margin: 1%; */
+    background-color: rgb(243, 243, 243);
+    border: 3px solid white;
+    /* box-shadow: 3px 3px 3px rgb(236, 236, 236),-3px -3px 3px rgb(225, 224, 224) ; */
+}
+
+.dl {
+    font-size: 18px;
+    font-weight: 700;
+    color: gray;
+    padding: 10px 15px;
+}
+
+dd {
+    padding: 0px 22px;
+    line-height: 20px;
+    font-family: sans-serif;
+    color: gray;
+
+}
+
+.dl strong {
+    color: black;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+/* footer-info */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: start;
+    align-items: flex-start;
+    align-content: center;
+    padding: 30px 18px;
+    background-color: rgb(7, 7, 44);
+    font-family: sans-serif;
+}
+
+.footer .info {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: white;
+    padding: 0 30px;
+}
+
+.footer .info p {
+    color: gray;
+    font-family: sans-serif;
+
+}
+
+.footer .info a {
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.footer .info a:hover {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.footer .border {
+    border-left: 2px solid white;
+    height: 200px;
+    margin-left: 80px;
+}
+
+.footer .info .mailus {
+    position: relative;
+    left: 65px;
+}
+
+.footer .info pre {
+    padding: 10px 0;
+    word-spacing: 0;
+    font-size: 12px;
+}
+
+.footer .info pre input {
+    border: none;
+    background: none;
+    color: blue;
+}
+
+footer hr {
+    color: white;
+
+}
+
+/* mob box-header2 */
+
+.mob-box-header2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    box-shadow: 2px 2px 2px gray;
+    padding: 10px 130px;
+}
+
+.mob-box-header2 select {
+    border: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    /* margin: 0 10px 0 10px; */
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.mob-box-header2 select:focus {
+    outline: none;
+}
+
+.sneak-peakbox {
+    padding: 30px 10px 20px 20px;
+}
+
+.sneak-peakbox p {
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.sneak-peakbox span {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: gray;
+}
+
+.sneak-peakbox a {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+    padding-top: 10px;
+}
+.mob-box-header-img{
+    position: relative;
+    height: 73vh;
+    width: 100%;
+    background-image: url(./mobile-box-header2/offimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mob-box-log{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 300px;
+}
+.mob-box-log p{
+    font-family: sans-serif;
+    font-size: 21px;
+    cursor: pointer;
+}
+.mob-box-log p:hover{
+    color: blue;
+}
+.mob-box-log img{
+    width: 160px;
+    transition: 0.3s;
+}
+.mob-box-log img:hover{
+    transform: scale(1.1,1.1);
+}
+.mob-box-log h1{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    left: 320px;
+    padding: 20px 0;
+    font-family: sans-serif;
+    color: rgb(147, 45, 242);
+    text-shadow:  4px 4px 5px orange;
+    white-space: nowrap;
+}
+#shopprice-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+#shopprice-logo img{
+    width: 550px;
+    height: 35vh;
+    box-shadow: -1px -1px 4px gray;
+}
+.mob-box-header-img2{
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    background-image: url(./mobile-box-header2/oppo-reno-8-pro-5g-1.jpg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 40% top 55%;
+}
+#slide-bg-screen2{
+    animation-name: mob-bg-slide;
+    height: 30vh;
+}
+@keyframes mob-bg-slide {
+    0% {
+        background-image: url(./headerimggroup/Apple_iPhone_Banner\ 3.jpg.crdownload.jpg);
+    background-position: left 40% top 55%;
+        
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url(./mobile-box-header2/mob-relme2.png);
+    background-position: left 40% top 55%;
+        
+        background-size: cover;
+    }
+
+    75% {
+        background-image: url(./mobile-box-header2/mob-relme1.png);
+    background-position: left 40% top 55%;
+       
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(./mobile-box-header2/oppo-reno-8-pro-5g-1.jpg.png);
+    background-position: left 40% top 55%;
+        background-size: cover;
+    }
+}
+
+.mob-box-header-img3{
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    background-image: url(./mobile-box-header2/infnix-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 40% top 55%;
+}
+.mob-box-header-img4{
+    position: relative;
+    height: 76vh;
+    width: 100%;
+    background-image: url(./mobile-box-header2/infnix-duble-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 40% top 55%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:569) {
+    /* #header-1 {
+        flex-wrap: wrap;
+    }
+    #electronic-section {
+        flex-wrap: wrap;
+        
+    } */
+    /* #header-1 input {
+        width: 300px;
+        height: 35px;
+        font-size: 15px;
+        margin-left: -2%;
+    } */
+}
